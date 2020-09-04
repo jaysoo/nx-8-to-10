@@ -18,7 +18,8 @@
             "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/assets"],
             "styles": ["apps/demo/src/styles.css"],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "buildLibsFromSource": true
           },
           "configurations": {
             "production": {
@@ -72,7 +73,8 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/demo/jest.config.js",
-            "tsConfig": "apps/demo/tsconfig.spec.json"
+            "tsConfig": "apps/demo/tsconfig.spec.json",
+            "passWithNoTests": true
           }
         }
       }
